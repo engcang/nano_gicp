@@ -12,6 +12,7 @@ project(nano_gicp)
 ### set compiler
 set(CMAKE_BUILD_TYPE "Release")
 set(CMAKE_CXX_FLAGS "-std=c++14 -pthread -fexceptions -g -ggdb")
+set(CMAKE_POSITION_INDEPENDENT_CODE ON)
 set(CMAKE_THREAD_PREFER_PTHREAD TRUE)
 include(FindOpenMP)
 if(OPENMP_FOUND)
